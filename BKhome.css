@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(112, 104, 104); /* พื้นหลังเป็นสีฟ้า */
+    /*background-image: url('images/background.jpg');  /*ใส่ภาพพื้นหลัง */
+    background-size: cover; /* ปรับขนาดภาพให้เต็มหน้าจอ */
+    background-position: center; /* จัดให้อยู่กึ่งกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    height: 100vh;  /* ทำให้ body ครอบคลุมความสูงของหน้าจอ */
+}

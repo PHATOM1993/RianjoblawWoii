@@ -1,0 +1,73 @@
+/* เมนูหลัก */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* เปลี่ยนเป็นสีเทาเข้ม */
+}
+
+.menu li {
+    display: inline-block;
+    position: relative; /* ใช้สำหรับให้เมนูย่อยอยู่ภายใน */
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white; /* เปลี่ยนสีข้อความให้เป็นสีขาว */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* เมนูย่อย */
+.submenu {
+    display: none; /* ซ่อนเมนูย่อยโดยค่าเริ่มต้น */
+    position: absolute;
+    top: 100%; /* ให้เมนูย่อยอยู่ใต้เมนูหลัก */
+    left: 0;
+    background-color: #333; /* เปลี่ยนเป็นสีเทาเข้ม */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.submenu > li > a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* แสดงเมนูย่อยเมื่อโฮเวอร์ */
+.menu > li:hover .submenu {
+    display: block;
+}
+
+/* เพิ่มสีเมื่อเมาส์ชี้ที่เมนู */
+.menu li:hover {
+    background-color: #555; /* สีเทาอ่อน */
+    border-radius: 5px;
+}
+
+/* เพิ่มสีเมื่อเมาส์ชี้ที่ลิงก์ในเมนู */
+.menu a:hover {
+    background-color: #ff5e5e; /* สีแดงสด */
+    color: white;
+    border-radius: 5px;
+}
+
+.submenu a:hover {
+    background-color: #1abc9c; /* สีส้ม */
+    color: white;
+}
+
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

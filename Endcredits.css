@@ -1,0 +1,57 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* คอนเทนเนอร์ของเนื้อหา */
+.container1 {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* หัวข้อหลัก */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ส่วนของทีม (3 คนเรียงในแถวเดียวกัน) */
+.team {
+    display: flex;
+    justify-self: center; 
+    gap: 20px; /* ระยะห่างระหว่างกล่อง */
+}
+
+/* กล่องของผู้จัดทำ */
+.member {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+}
+
+/* รูปภาพ */
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* ข้อมูลของผู้จัดทำ */
+.info h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.info p {
+    font-size: 14px;
+    color: #777;
+}

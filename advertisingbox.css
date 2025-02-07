@@ -1,0 +1,19 @@
+.box {
+    width: 1440px; /*ปรับขนาดของกล่องใส่รูปภาพ ยาว*/
+    height: 450px; /*ปรับขนาดของกล่องใส่รูปภาพ สูง*/
+    border: 2px solid black; /*ปรับสีของเส้นรอบกล่อง*/
+    background-image: url('images/Sign.jpg');  /*ใส่รูปภาพ */
+    background-size: cover; /* ปรับให้รูปเต็มกล่อง */
+    background-position: center; /* จัดตำแหน่งรูปให้อยู่กึ่งกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+}
+
+body {
+    display: flex; /*ใช้ Flexbox เพื่อจัดวางองค์ประกอบ*/ 
+    justify-content: center; /*จัดตำแหน่งกึ่งกลางในแนวนอน*/ 
+   /*align-items: center; /*จัดตำแหน่งกึ่งกลางในแนวตั้ง*/
+    height: 100vh; /*ให้เต็มความสูงของหน้าจอ*/
+    margin-top: 50px; /* ขยับกล่องลงมาจากด้านบน 50px */
+}
+
+

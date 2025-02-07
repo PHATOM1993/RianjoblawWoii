@@ -1,0 +1,18 @@
+.slide-container {
+  position: relative;
+  width: 100%;  /* กำหนดความกว้างเป็น 100% ของพื้นที่พ่อแม่ */
+  max-width: 800px;  /* กำหนดความกว้างสูงสุดของ container (คุณสามารถปรับได้ตามต้องการ) */
+  height: 400px;  /* กำหนดความสูงที่คุณต้องการ */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;  /* ซ่อนทุกรูปภาพในตอนเริ่มต้น */
+}
+
+img {
+  width: 100%;
+  height: 100%;  /* กำหนดให้ภาพขยายเต็มพื้นที่ container ตามอัตราส่วน */
+  object-fit: cover;  /* ทำให้ภาพไม่ผิดสัดส่วนและเต็มพื้นที่ */
+}

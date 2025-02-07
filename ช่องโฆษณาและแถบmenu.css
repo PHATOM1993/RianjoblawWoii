@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container1 {
+    display: flex; /* ใช้ Flexbox เพื่อจัดวางแนวนอน */
+    height: 100vh; /* กำหนดให้เต็มจอ */
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* เมนูแนวตั้ง */
+.menu-container {
+    width: 250px; /* ความกว้างของเมนู */
+    background-color: #2c3e50; /* สีพื้นหลัง */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vertical-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu li {
+    margin-bottom: 10px;
+}
+
+.vertical-menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.vertical-menu a:hover {
+    background-color: #1abc9c; /* สีเมื่อชี้เมาส์ */
+}
+
+/* กล่องข่าวสาร */
+.news-container {
+    flex: 1; /* ให้ขยายเต็มพื้นที่ที่เหลือ */
+    margin-left: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.news-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+

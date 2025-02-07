@@ -1,0 +1,74 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* คอนเทนเนอร์หลัก */
+.containerpersonnel {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* หัวข้อ */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* จัดรูปภาพให้อยู่ในแถวเดียวกัน */
+.team {
+    display: flex;
+    flex-wrap: wrap; /* ให้ขึ้นบรรทัดใหม่เมื่อหน้าจอแคบ */
+    justify-content: center; /* จัดกึ่งกลาง */
+    gap: 20px; /* ระยะห่างระหว่างกล่อง */
+}
+
+/* กล่องของบุคลากร */
+.member {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px; /* ขนาดกล่อง */
+}
+
+/* รูปภาพ */
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #007bff; /* เส้นขอบรูป */
+}
+
+/* ข้อมูลของผู้จัดทำ */
+.info h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.info p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive: ถ้าหน้าจอเล็กลง จัดเป็น 2 คนต่อแถว */
+@media (max-width: 768px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: ถ้าหน้าจอเล็กมาก ให้เรียงเป็น 1 คนต่อแถว */
+@media (max-width: 480px) {
+    .team {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

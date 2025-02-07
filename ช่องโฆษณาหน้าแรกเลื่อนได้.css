@@ -1,0 +1,14 @@
+
+.moving-box {
+    position: absolute;
+    top: 10%;
+    left: -200px; /* เริ่มจากนอกจอด้านซ้าย */
+    transform: translateY(-50%);
+    background: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    white-space: nowrap;
+}

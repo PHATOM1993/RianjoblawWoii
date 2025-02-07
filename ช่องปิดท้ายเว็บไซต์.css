@@ -1,0 +1,78 @@
+footer {
+    background-color: #222; /* สีพื้นหลังของ footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ปรับแต่งแถบเมนู footer */
+.footer-menu {
+    list-style: none;
+    padding: 10px;
+    margin: 10px auto;
+    background: white; /* ทำให้เมนูมีพื้นหลังสีขาว */
+    border-radius: 10px; /* ขอบมน */
+    display: inline-block;
+}
+
+.footer-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* เพิ่มอิโมจิ */
+.footer-menu li:nth-child(1) a::before {
+    content: "🏫 "; /* อิโมจิสำหรับ "เกี่ยวกับเรา" */
+}
+.footer-menu li:nth-child(2) a::before {
+    content: "📞 "; /* อิโมจิสำหรับ "ติดต่อ" */
+}
+.footer-menu li:nth-child(3) a::before {
+    content: "🔒 "; /* อิโมจิสำหรับ "นโยบายความเป็นส่วนตัว" */
+}
+
+/* Hover effect */
+.footer-menu a:hover {
+    color: #ff5e5e;
+    transform: scale(1.1);
+}
+
+/* ปรับแต่งไอคอนโซเชียล */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    border: 2px solid white; /* เส้นขอบสีขาว */
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hover ให้ไอคอนขยาย */
+.social-icons a:hover {
+    transform: scale(1.2);
+}
